@@ -400,3 +400,63 @@ Button outline
   color: var(--text-color-secondary);
   cursor: pointer;
 }
+
+/*------------
+Tableau
+------------*/
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  margin: var(--spacing-md);
+  width: 90%;
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-3xl);
+}
+
+th {
+  background-color: var(--primary-color-200);
+  color: var(--text-color-secondary);
+}
+td {
+  color: var(--primary-color-400);
+}
+              /*Titre de chaque colonne*/
+
+.table-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-sm); 
+}
+.table-header-row {
+   border: 1px solid var(--primary-color-200);
+  padding: var(--spacing-3xl);
+  background-color: var(--primary-color-200);
+}
+
+            /* Ligne 1 du tableau */
+
+.table-row-1, .table-cell-1  {
+  background-color: var(--primary-color-50);
+}
+            /* Ligne 2 du tableau */
+
+.table-row-2, .table-cell-2 {
+  background-color: var( --bg-color);
+}
+@media (min-width: 768px) {
+  .table-container {
+    width: 90%;
+  }
+}
