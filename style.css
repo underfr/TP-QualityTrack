@@ -479,6 +479,7 @@ td {
 }
 .indicator-base div p{
   background-color: transparent;
+  color: var(--text-color-primary);
 }
 .indicator-primary{
   background-color: var(--primary-color-200);
@@ -554,7 +555,7 @@ Dropdown Menu
 }
 .dropdown select option{
   background-color: var(--primary-color-200);
-
+}
 /*---
 Icons
 ---*/
