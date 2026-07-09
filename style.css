@@ -560,3 +560,66 @@ label > span {
 .input-disabled > input:focus {
   border: 2px solid var(--primary-color-200);
 }
+/* Badges */
+.badges{
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-medium);
+  gap: 6px;
+  padding: 0 var(--spacing-md);
+  border-radius: 10px;
+}
+.badge-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.badges p{
+  background-color: transparent;
+}
+
+/* Badges grey color */
+.badges-neural{
+  background-color: color-mix(in srgb, var(--neutral-color-200) 20%, transparent);
+  color: var(--neutral-color-200);
+}
+.badge-dot-neural{
+  background-color: var(--neutral-color-200);
+}
+
+/* Badges primary color */
+.badges-primary{
+  background-color: color-mix(in srgb, var(--semantic-color-info) 20%, transparent);
+  color: var(--semantic-color-info);
+}
+.badge-dot-primary{
+  background-color: var(--semantic-color-info);
+}
+
+/* Badges success color */
+.badges-success{
+  background-color: color-mix(in srgb, var(--semantic-color-success) 20%, transparent);
+  color: var(--semantic-color-success);
+}
+.badge-dot-success{
+  background-color: var(--semantic-color-success);
+}
+
+/* Badges warning color */
+.badges-warning{
+  background-color: color-mix(in srgb, var(--semantic-color-warning) 20%, transparent);
+  color: var(--semantic-color-warning);
+}
+.badge-dot-warning{
+  background-color: var(--semantic-color-warning);
+}
+
+/* Badges error color */
+.badges-error{
+  background-color: color-mix(in srgb, var(--semantic-color-error) 20%, transparent);
+  color: var(--semantic-color-error);
+}
+.badge-dot-error{
+  background-color: var(--semantic-color-error);
+}
