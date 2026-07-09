@@ -91,7 +91,9 @@ body {
 
 .button-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
 }
 
 /*------------
@@ -159,59 +161,242 @@ Button primary
 Button danger
 ------------*/
 
-.button-primary-container {
+.button-danger-container {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.button-primary-lg {
+.button-danger-lg {
   height: fit-content;
   width: fit-content;
   padding: 20px;
   border-radius: 8px;
-  border-color: var(--primary-color-200);
+  border-color: var(--red-color-200);
   border-style: none;
-  background-color: var(--primary-color-200);
+  background-color: var(--red-color-200);
   color: var(--text-color-secondary);
   font-family: var(--font-family-body);
   font-size: var(--font-size-button);
 }
-.button-primary-lg:hover {
-  background-color: var(--primary-color-300);
+.button-danger-lg:hover {
+  background-color: var(--red-color-300);
   cursor: pointer;
 }
 
-.button-primary-md {
+.button-danger-md {
   height: fit-content;
   width: fit-content;
   padding: 16px;
   border-radius: 8px;
-  border-color: var(--primary-color-200);
+  border-color: var(--red-color-200);
   border-style: none;
-  background-color: var(--primary-color-200);
+  background-color: var(--red-color-200);
   color: var(--text-color-secondary);
   font-family: var(--font-family-body);
   font-size: var(--font-size-button);
 }
-.button-primary-md:hover {
-  background-color: var(--primary-color-300);
+.button-danger-md:hover {
+  background-color: var(--red-color-300);
   cursor: pointer;
 }
 
-.button-primary-sm {
+.button-danger-sm {
   height: fit-content;
   width: fit-content;
   padding: 12px;
   border-radius: 8px;
-  border-color: var(--primary-color-200);
+  border-color: var(--red-color-200);
   border-style: none;
-  background-color: var(--primary-color-200);
+  background-color: var(--red-color-200);
   color: var(--text-color-secondary);
   font-family: var(--font-family-body);
   font-size: var(--font-size-button);
 }
-.button-primary-sm:hover {
-  background-color: var(--primary-color-300);
+.button-danger-sm:hover {
+  background-color: var(--red-color-300);
+  cursor: pointer;
+}
+/*------------
+Button warning
+------------*/
+
+.button-warning-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button-warning-lg {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 8px;
+  border-color: var(--orange-color-200);
+  border-style: none;
+  background-color: var(--orange-color-200);
+  color: var(--text-color-secondary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-warning-lg:hover {
+  background-color: var(--orange-color-300);
+  cursor: pointer;
+}
+
+.button-warning-md {
+  height: fit-content;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  border-color: var(--orange-color-200);
+  border-style: none;
+  background-color: var(--orange-color-200);
+  color: var(--text-color-secondary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-warning-md:hover {
+  background-color: var(--orange-color-300);
+  cursor: pointer;
+}
+
+.button-warning-sm {
+  height: fit-content;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  border-color: var(--orange-color-200);
+  border-style: none;
+  background-color: var(--orange-color-200);
+  color: var(--text-color-secondary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-warning-sm:hover {
+  background-color: var(--orange-color-300);
+  cursor: pointer;
+}
+/*------------
+Button outline
+------------*/
+
+.button-outline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button-outline-lg {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-color-100);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-outline-lg:hover {
+  background-color: var(--neutral-color-200);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.button-outline-md {
+  height: fit-content;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-color-100);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-outline-md:hover {
+  background-color: var(--neutral-color-200);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.button-outline-sm {
+  height: fit-content;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-color-100);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-outline-sm:hover {
+  background-color: var(--neutral-color-200);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+/*------------
+Button outline
+------------*/
+
+.button-ghost-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button-ghost-lg {
+  height: fit-content;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 8px;
+  border-color: var(--neutral-color-100);
+  border-style: none;
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-ghost-lg:hover {
+  background-color: var(--neutral-color-200);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.button-ghost-md {
+  height: fit-content;
+  width: fit-content;
+  padding: 16px;
+  border-radius: 8px;
+  border-color: var(--neutral-color-100);
+  border-style: none;
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-ghost-md:hover {
+  background-color: var(--neutral-color-200);
+  color: var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.button-ghost-sm {
+  height: fit-content;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+  border-color: var(--neutral-color-100);
+  border-style: none;
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-button);
+}
+.button-ghost-sm:hover {
+  background-color: var(--neutral-color-200);
+  color: var(--text-color-secondary);
   cursor: pointer;
 }
