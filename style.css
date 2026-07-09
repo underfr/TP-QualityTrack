@@ -460,3 +460,39 @@ td {
     width: 90%;
   }
 }
+
+/* Indicator */
+.indicator-base{
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.indicator-base div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 8px;
+}
+.indicator-base div p{
+  background-color: transparent;
+}
+.indicator-primary{
+  background-color: var(--primary-color-200);
+}
+.indicator-red-100{
+  background-color: var(--red-color-100);
+}
+.indicator-red-50{
+  background-color: var(--red-color-50);
+}
+.indicator-green{
+  background-color: var(--green-color-200);
+}
+.indicator-orange{
+  background-color: var(--orange-color-200);
+}
+.indicator-neutral{
+  background-color: var(--neutral-color-200);
+}
